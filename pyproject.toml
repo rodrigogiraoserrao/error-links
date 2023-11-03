@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "error-links"
+version = "0.1.0"
+description = "Adds helpful links to the REPL when an exception happens."
+authors = ["Rodrigo Girão Serrão <rodrigo@mathspp.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
