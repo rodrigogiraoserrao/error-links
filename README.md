@@ -20,14 +20,17 @@ install()
 ```
 
 You can control whether to show the emoji or the text with the `install` keyword arguments `use_emoji` and `show_text`, respectively.
-
 For example, `install(show_text=False)` will use only the emoji for the link.
 
+You can switch from Google to DuckDuckGo by specifying `search_engine="duckduckgo"`.
+More search engines _may_ be supported in the future if you make a PR or [request it](https://github.com/rodrigogiraoserrao/error-links/issues/new).
 
-### Install automatically
 
-You can install the error links automatically if you modify the file `sitecustomize.py` in your directory `site-packages`.
-The command `error-links install` should install error links automatically, so that you get error links when you run other files and scripts with the command `python`.
-Use the command `error-links where` to figure out what the installation file is.
+## Install automatically
+
+You can use the command `error-links install` to install error links automatically.
+This will modify the file `sitecustomize.py` in your directory `site-packages`.
+
+To see where the installation was made, you can use the command `error-links where`.
 
 If you want error links in the REPL automatically as well, you can [read this article on how to run custom Python code on REPL startup](https://mathspp.com/blog/til/customise-the-repl-on-start-up).
